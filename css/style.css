@@ -1,6 +1,6 @@
 /* start globale variables */
-:root{
-  --main-color:#17cbb9;
+:root {
+  --main-color: #17cbb9;
 }
 /* end globale variables */
 
@@ -55,12 +55,11 @@ body {
 
 .header .container .logo {
   width: 60px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .header .links {
   position: relative;
-
 }
 
 .header .links .icon {
@@ -97,16 +96,16 @@ body {
 }
 
 .header .links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    background-color: #eee;
-    position: absolute;
-    right: 0;
-    min-width: 200px;
-    top: calc(100% + 15px);
-    display: none;
-    z-index: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #eee;
+  position: absolute;
+  right: 0;
+  min-width: 200px;
+  top: calc(100% + 15px);
+  display: none;
+  z-index: 1;
 }
 .header .links ul:before {
   content: "";
@@ -118,8 +117,8 @@ body {
   right: 0px;
 }
 
-.header .links:hover ul{
-    display: block;
+.header .links:hover ul {
+  display: block;
 }
 .header .links ul li a {
   display: block;
@@ -143,34 +142,71 @@ body {
 }
 
 /* start landing section  */
-.landing{
-background-image: url('../images/landingsec.jpeg');
-background-size:cover;
-height:calc(100vh - 64px );
-position: relative;
-} 
-.landing .text-intro{
+.landing {
+  background-image: url("../images/landingsec.jpeg");
+  background-size: cover;
+  height: calc(100vh - 64px);
+  position: relative;
+}
+.landing .text-intro {
   position: absolute;
-  left:50%;
+  left: 50%;
   top: 50%;
-  transform:translate(-50%, -50%);
-  -webkit-transform:translate(-50%, -50%);
-  -moz-transform:translate(-50%, -50%);
-  -ms-transform:translate(-50%, -50%);
-  -o-transform:translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   text-align: center;
-  width:320px;
+  width: 320px;
   max-width: 100%;
 }
-.landing .text-intro h1{
-  margin:0;
-  font-weight:bold;
-  font-size:50px;
-  color:var(--main-color);
+.landing .text-intro h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 50px;
+  color: var(--main-color);
 }
 
-.landing .text-intro p{
-  font-size:19px;
-  line-height:1.8;
+.landing .text-intro p {
+  font-size: 19px;
+  line-height: 1.8;
 }
 /* end landing section  */
+
+/* start features  */
+.features {
+  background-color: #f6f6f6;
+  padding: 60px 0;
+}
+
+.features .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.features .container .feat {
+  text-align: center;
+  padding: 20px;
+}
+
+.features .feat h3{
+  font-weight:800;
+  margin:30px 0;
+}
+.features .container .feat i {
+  color: var(--main-color);
+  
+}
+.features .container .feat i:hover{
+  cursor: pointer;
+  color: #17cbb952;
+}
+
+.features .feat p{
+  line-height:1.8;
+  color:#777;
+  font-size:17px;
+}
+
+/* end features  */
