@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 /* start globale variables */
 :root {
   --main-color: #17cbb9;
@@ -490,6 +493,7 @@ body {
 /* end contact */
 /* start footer  */
 .footer {
+  position:relative;
   background-color: var(--secondary-color);
   color: white;
   text-align: center;
@@ -499,5 +503,22 @@ body {
 .footer span {
   color: var(--main-color);
   font-weight: bold;
+}
+
+.footer a {
+  position: absolute;
+  content: "";
+  right:100px;
+  bottom: 80px;
+  border: 30px solid;
+  border-color: transparent transparent var(--main-color) transparent;
+  animation: updwn 1.4s alternate-reverse infinite linear;
+  -webkit-animation: updwn 1.4s alternate-reverse infinite linear;
+}
+
+@keyframes updwn{ 
+  to{
+   bottom:100px;
+  }
 }
 /* end footer  */
